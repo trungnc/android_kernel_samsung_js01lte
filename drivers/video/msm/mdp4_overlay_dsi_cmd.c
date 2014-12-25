@@ -755,7 +755,7 @@ void mdp4_mipi_vsync_enable(struct msm_fb_data_type *mfd,
 
 	tear_en = (1 << which);
 
-	if ((mfd->use_mdp_vsync) && (mfd->ibuf.vsync_enable) &&
+	if ((mfd->use_mdp_vsync) && 
 		(mfd->panel_info.lcd.vsync_enable)) {
 
 		if (vsync_start_y_adjust <= pipe->dst_y)
